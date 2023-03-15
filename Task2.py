@@ -23,7 +23,7 @@ def generate_otp():
 def send_email(email, otp):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login("narayanbhadaniya100@gmail.com", "ykfmyilgsnykmwkm")
+    server.login("name@gmail.com", "password")
     message = "Your otp is "+otp
     server.sendmail('Mail for You', email, message)
     server.quit()
